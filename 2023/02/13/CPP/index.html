@@ -1,0 +1,261 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Xi Space | Xi Space</title><meta name="author" content="Xi"><meta name="copyright" content="Xi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="CPP的定义C++ 程序可以定义为对象的集合，这些对象通过调用彼此的方法进行交互。现在让我们简要地看一下什么是类、对象，方法、即时变量。  对象 对象具有状态和行为  类 类可以定义为描述对象行为  方法 基本上说，一个方法表示一种行为   即时变量 每个对象都有其独特的即时变量   CPP程序结构数组数组的定义C++ 支持数组数据结构，它可以存储一个固定大小的相同类型元素的顺序集合。数组是用来存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Xi Space">
+<meta property="og:url" content="http://programmer-xi.com.cn/2023/02/13/CPP/index.html">
+<meta property="og:site_name" content="Xi Space">
+<meta property="og:description" content="CPP的定义C++ 程序可以定义为对象的集合，这些对象通过调用彼此的方法进行交互。现在让我们简要地看一下什么是类、对象，方法、即时变量。  对象 对象具有状态和行为  类 类可以定义为描述对象行为  方法 基本上说，一个方法表示一种行为   即时变量 每个对象都有其独特的即时变量   CPP程序结构数组数组的定义C++ 支持数组数据结构，它可以存储一个固定大小的相同类型元素的顺序集合。数组是用来存">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-02-13T13:30:29.104Z">
+<meta property="article:modified_time" content="2023-02-21T16:02:32.140Z">
+<meta property="article:author" content="Xi">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://programmer-xi.com.cn/2023/02/13/CPP/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Xi Space',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-02-22 00:02:32'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = url => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      link.onload = () => resolve()
+      link.onerror = () => reject()
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Xi Space"><span class="site-name">Xi Space</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-02-13T13:30:29.104Z" title="发表于 2023-02-13 21:30:29">2023-02-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-02-21T16:02:32.140Z" title="更新于 2023-02-22 00:02:32">2023-02-22</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="CPP的定义"><a href="#CPP的定义" class="headerlink" title="CPP的定义"></a>CPP的定义</h1><p>C++ 程序可以定义为对象的集合，这些对象通过调用彼此的方法进行交互。现在让我们简要地看一下什么是类、对象，方法、即时变量。</p>
+<ul>
+<li><p><strong>对象</strong> 对象具有状态和行为</p>
+</li>
+<li><p><strong>类</strong> 类可以定义为描述对象行为</p>
+</li>
+<li><p><strong>方法</strong> 基本上说，一个方法表示一种行为 </p>
+</li>
+<li><p><strong>即时变量</strong> 每个对象都有其独特的即时变量</p>
+</li>
+</ul>
+<h1 id="CPP程序结构"><a href="#CPP程序结构" class="headerlink" title="CPP程序结构"></a>CPP程序结构</h1><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h3 id="数组的定义"><a href="#数组的定义" class="headerlink" title="数组的定义"></a>数组的定义</h3><p>C++ 支持<strong>数组</strong>数据结构，它可以存储一个固定大小的相同类型元素的顺序集合。数组是用来存储一系列数据，但它往往被认为是一系列相同类型的变量。所有的数组都是由连续的内存位置组成。最低的地址对应第一个元素，最高的地址对应最后一个元素。</p>
+<h3 id="一维数组"><a href="#一维数组" class="headerlink" title="一维数组"></a>一维数组</h3><h4 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h4><p>在 C++ 中要声明一个数组，需要指定元素的类型和元素的数量，如下所示：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type arrayName [ arraySize ];</span><br></pre></td></tr></table></figure>
+
+<p><strong>arraySize</strong> 必须是一个大于零的整数常量，<strong>type</strong> 可以是任意有效的 C++ 数据类型。例如，要声明一个类型为 double 的包含 10 个元素的数组 <strong>balance</strong>，声明语句如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> balance[<span class="number">10</span>];</span><br></pre></td></tr></table></figure>
+
+<p>现在 <em>balance</em> 是一个可用的数组，可以容纳 10 个类型为 double 的数字。</p>
+<h4 id="初始化数组"><a href="#初始化数组" class="headerlink" title="初始化数组"></a>初始化数组</h4><p>在 C++ 中，您可以<strong>逐个初始化数组</strong>，也可以<strong>使用一个初始化语句</strong>，一维数组有三种命名方式，如下所示：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//数据类型	数组名[数组长度];对数组中的元素进行一一赋值</span></span><br><span class="line">	<span class="type">int</span> balance1[<span class="number">5</span>] = &#123; <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span> &#125;;</span><br><span class="line">    <span class="comment">//数据类型    数组名[数组长度] = &#123;值1，值2，值3...&#125;;</span></span><br><span class="line">	<span class="type">int</span> balance2[<span class="number">5</span>];</span><br><span class="line">	balance2[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">	balance2[<span class="number">1</span>] = <span class="number">2</span>;</span><br><span class="line">	balance2[<span class="number">2</span>] = <span class="number">3</span>;</span><br><span class="line">	balance2[<span class="number">3</span>] = <span class="number">4</span>;</span><br><span class="line">	balance2[<span class="number">4</span>] = <span class="number">5</span>;</span><br><span class="line">    <span class="comment">//数据类型    数组名[] = &#123;值1，值2，值3...&#125;;</span></span><br><span class="line">    <span class="type">int</span> balance3[]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">4</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;balance1[&quot;</span> &lt;&lt; i &lt;&lt; <span class="string">&quot;]=&quot;</span> &lt;&lt; balance1[i] &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">4</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;balance2[&quot;</span> &lt;&lt; i &lt;&lt; <span class="string">&quot;]=&quot;</span> &lt;&lt; balance2[i] &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在C++中，数组的特点：</p>
+<ul>
+<li><strong>未经过初始化的数组量初始值为0</strong>。</li>
+<li><strong>放在一块连续的内存之中，数组中每个元素都是相同数据类型。</strong></li>
+<li><strong>数组元素的下标是从0开始检索的。</strong></li>
+</ul>
+<h4 id="数组名"><a href="#数组名" class="headerlink" title="数组名"></a>数组名</h4><p>作用：</p>
+<ol>
+<li><p>可以统计整个数组内存中的长度（定义一个名为arr的数组）     </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">sizeof</span>（arr）</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可以获取数组在内存中的首地址     </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout&lt;&lt;arr&lt;&lt;endl;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p><strong>数组的首地址即是数组中第一个元素的地址。</strong>数组的相邻元素之间的元素地址的值相差的是变量类型内存大小</p>
+<p>注：<strong>数组名是常量，不能进行赋值操作</strong></p>
+<h3 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h3><h4 id="声明数组-1"><a href="#声明数组-1" class="headerlink" title="声明数组"></a>声明数组</h4><p>一个二维数组，在本质上，是一个一维数组的列表。声明一个 x 行 y 列的二维整型数组，形式如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type arrayName [ x ][ y ];</span><br></pre></td></tr></table></figure>
+
+<p><strong>arraySize</strong> 必须是一个大于零的整数常量，<strong>type</strong> 可以是任意有效的 C++ 数据类型。例如，要声明一个类型为 double 的包含3行4列的元素的数组 <strong>balance</strong>，声明语句如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> balance[<span class="number">3</span>][<span class="number">4</span>]</span><br></pre></td></tr></table></figure>
+
+<h4 id="初始化数组-1"><a href="#初始化数组-1" class="headerlink" title="初始化数组"></a>初始化数组</h4><p>二维数组定义的四种方式：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//数组类型 数组名 [行数][列数]</span></span><br><span class="line">	<span class="type">int</span> arr[<span class="number">2</span>][<span class="number">3</span>];</span><br><span class="line">	arr[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">	arr[<span class="number">0</span>][<span class="number">1</span>] = <span class="number">2</span>;</span><br><span class="line">	arr[<span class="number">0</span>][<span class="number">2</span>] = <span class="number">3</span>;</span><br><span class="line">	arr[<span class="number">1</span>][<span class="number">0</span>] = <span class="number">4</span>;</span><br><span class="line">	arr[<span class="number">1</span>][<span class="number">1</span>] = <span class="number">5</span>;</span><br><span class="line">	arr[<span class="number">1</span>][<span class="number">2</span>] = <span class="number">6</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="number">3</span>; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			cout &lt;&lt; arr[i][j] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		cout &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//数据类型 数组名[行数][列数] = &#123; &#123;数据1，数据2 &#125; ，&#123;数据3，数据4 &#125; &#125;;</span></span><br><span class="line">	<span class="type">int</span> arr2[<span class="number">2</span>][<span class="number">3</span>] =&#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;&#125;;</span><br><span class="line">	<span class="comment">//方式3</span></span><br><span class="line">	<span class="comment">//数据类型 数组名[行数][列数] = &#123; 数据1，数据2 ,数据3，数据4  &#125;;</span></span><br><span class="line">	<span class="type">int</span> arr3[<span class="number">2</span>][<span class="number">3</span>] = &#123; <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span> &#125;; </span><br><span class="line">	<span class="comment">//方式4 </span></span><br><span class="line">	<span class="comment">//数据类型 数组名[][列数] = &#123; 数据1，数据2 ,数据3，数据4  &#125;;</span></span><br><span class="line">	<span class="type">int</span> arr4[][<span class="number">3</span>] = &#123; <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span> &#125;;	</span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="数组名-1"><a href="#数组名-1" class="headerlink" title="数组名"></a>数组名</h4><p>同一维数组，二维数组名的作用：</p>
+<ol>
+<li><p>可以统计整个数组内存中的长度（定义一个名为arr的数组）     </p>
+</li>
+<li><p>可以获取数组在内存中的首地址</p>
+</li>
+</ol>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>函数是一组一起执行一个任务的语句。每个 C 程序都至少有一个函数，即主函数 <strong>main()</strong> ，所有简单的程序都可以定义其他额外的函数。函数<strong>声明</strong>告诉编译器函数的名称、返回类型和参数。函数<strong>定义</strong>提供了函数的实际主体。</p>
+<h3 id="函数的定义"><a href="#函数的定义" class="headerlink" title="函数的定义"></a>函数的定义</h3><p>函数的定义一般主要有5个步骤：</p>
+<ol>
+<li><p>返回值类型：一个函数可以返回一个值。<strong>return_type</strong> 是函数返回的值的数据类型。有些函数执行所需的操作而不返回值，在这种情况下，return_type 是关键字 <strong>void</strong>。</p>
+</li>
+<li><p>函数名：这是函数的实际名称。函数名和参数列表一起构成了函数签名</p>
+</li>
+<li><p>参数表列：当函数被调用时，您向参数传递一个值，这个值被称为实际参数。参数列表包括函数参数的类型、顺序、数量。参数是可选的，也就是说，函数可能不包含参数。</p>
+</li>
+<li><p>函数体语句：函数主体包含一组定义函数执行任务的语句</p>
+</li>
+<li><p>return 表达式：返回函数最后所需要得到的值。和返回值类型挂钩，函数执行完后，返回相应的数据</p>
+</li>
+</ol>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">return_type <span class="title">function_name</span><span class="params">( parameter list )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   body of the function;</span><br><span class="line">   <span class="keyword">return</span> 表达式;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="函数调用"><a href="#函数调用" class="headerlink" title="函数调用"></a>函数调用</h3><p>创建 C 函数时，会定义函数做什么，然后通过调用函数来完成已定义的任务。当程序调用函数时，程序控制权会转移给被调用的函数。被调用的函数执行已定义的任务，当函数的返回语句被执行时，或到达函数的结束括号时，会把程序控制权交还给主程序。</p>
+<p>调用函数时，传递所需参数，如果函数返回一个值，则可以存储返回值。</p>
+<p>注：<strong>函数定义里小括号内称为形参，函数调用时传入的参数称为实参，形参的改变无法影响实参</strong></p>
+<p><strong>功能：</strong>使用定义好的函数</p>
+<p><strong>语法：</strong>函数名（参数）</p>
+<table>
+<thead>
+<tr>
+<th align="left">调用类型</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">传值调用</td>
+<td align="left">该方法把参数的实际值赋值给函数的形式参数。在这种情况下，修改函数内的形式参数对实际参数没有影响。</td>
+</tr>
+<tr>
+<td align="left">指针调用</td>
+<td align="left">该方法把参数的地址赋值给形式参数。在函数内，该地址用于访问调用中要用到的实际参数。这意味着，修改形式参数会影响实际参数。</td>
+</tr>
+<tr>
+<td align="left">引用调用</td>
+<td align="left">该方法把参数的引用赋值给形式参数。在函数内，该引用用于访问调用中要用到的实际参数。这意味着，修改形式参数会影响实际参数。</td>
+</tr>
+</tbody></table>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"> </span><br><span class="line"><span class="comment">// 函数声明</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">max</span><span class="params">(<span class="type">int</span> num1, <span class="type">int</span> num2)</span></span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="type">int</span> a = <span class="number">100</span>;</span><br><span class="line">   <span class="type">int</span> b = <span class="number">200</span>;</span><br><span class="line">   <span class="type">int</span> ret;</span><br><span class="line">   <span class="comment">// 调用函数来获取最大值</span></span><br><span class="line">   ret = <span class="built_in">max</span>(a, b);</span><br><span class="line">   cout &lt;&lt; <span class="string">&quot;Max value is : &quot;</span> &lt;&lt; ret &lt;&lt; endl; </span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">// 函数返回两个数中较大的那个数</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">max</span><span class="params">(<span class="type">int</span> num1, <span class="type">int</span> num2)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="comment">// 局部变量声明</span></span><br><span class="line">   <span class="type">int</span> result;</span><br><span class="line">   <span class="keyword">if</span> (num1 &gt; num2)</span><br><span class="line">      result = num1;</span><br><span class="line">   <span class="keyword">else</span></span><br><span class="line">      result = num2;</span><br><span class="line">   <span class="keyword">return</span> result; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="函数的分文件编写"><a href="#函数的分文件编写" class="headerlink" title="函数的分文件编写"></a>函数的分文件编写</h3><p>函数分文件编写一般有4个步骤</p>
+<ol>
+<li>创建后缀名为.h的头文件  </li>
+<li>创建后缀名为.cpp的源文件</li>
+<li>在头文件中写函数的声明</li>
+<li>在源文件中写函数的定义</li>
+</ol>
+<h2 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h2><h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h2></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://programmer-xi.com.cn">Xi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://programmer-xi.com.cn/2023/02/13/CPP/">http://programmer-xi.com.cn/2023/02/13/CPP/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://programmer-xi.com.cn" target="_blank">Xi Space</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/02/06/hello-world/" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Xi</div><div class="author-info__description">如果你真的愿意为自己的梦想去努力，最差的结果，不过是大器晚成。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CPP%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.</span> <span class="toc-text">CPP的定义</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CPP%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84"><span class="toc-number">2.</span> <span class="toc-text">CPP程序结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">2.1.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.1.1.</span> <span class="toc-text">数组的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="toc-number">2.1.2.</span> <span class="toc-text">一维数组</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%E6%95%B0%E7%BB%84"><span class="toc-number">2.1.2.1.</span> <span class="toc-text">声明数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E6%95%B0%E7%BB%84"><span class="toc-number">2.1.2.2.</span> <span class="toc-text">初始化数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%90%8D"><span class="toc-number">2.1.2.3.</span> <span class="toc-text">数组名</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="toc-number">2.1.3.</span> <span class="toc-text">二维数组</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%E6%95%B0%E7%BB%84-1"><span class="toc-number">2.1.3.1.</span> <span class="toc-text">声明数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E6%95%B0%E7%BB%84-1"><span class="toc-number">2.1.3.2.</span> <span class="toc-text">初始化数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%90%8D-1"><span class="toc-number">2.1.3.3.</span> <span class="toc-text">数组名</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-number">2.2.</span> <span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.2.1.</span> <span class="toc-text">函数的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8"><span class="toc-number">2.2.2.</span> <span class="toc-text">函数调用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E6%96%87%E4%BB%B6%E7%BC%96%E5%86%99"><span class="toc-number">2.2.3.</span> <span class="toc-text">函数的分文件编写</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%87%E9%92%88"><span class="toc-number">2.3.</span> <span class="toc-text">指针</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E4%BD%93"><span class="toc-number">2.4.</span> <span class="toc-text">结构体</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/13/CPP/" title="无题">无题</a><time datetime="2023-02-13T13:30:29.104Z" title="发表于 2023-02-13 21:30:29">2023-02-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/06/hello-world/" title="Hello World">Hello World</a><time datetime="2023-02-06T12:13:42.324Z" title="发表于 2023-02-06 20:13:42">2023-02-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Xi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
